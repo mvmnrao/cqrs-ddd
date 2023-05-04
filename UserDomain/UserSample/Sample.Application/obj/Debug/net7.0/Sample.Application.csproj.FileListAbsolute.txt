@@ -1,0 +1,17 @@
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\bin\Debug\net7.0\Sample.Application.deps.json
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\bin\Debug\net7.0\Sample.Application.dll
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\bin\Debug\net7.0\Sample.Application.pdb
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\bin\Debug\net7.0\Sample.Domain.dll
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\bin\Debug\net7.0\Sample.Infrastructure.dll
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\bin\Debug\net7.0\Sample.Domain.pdb
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\bin\Debug\net7.0\Sample.Infrastructure.pdb
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\Sample.Application.csproj.AssemblyReference.cache
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\Sample.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\Sample.Application.AssemblyInfoInputs.cache
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\Sample.Application.AssemblyInfo.cs
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\Sample.Application.csproj.CoreCompileInputs.cache
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\Sample.Application.csproj.CopyComplete
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\Sample.Application.dll
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\refint\Sample.Application.dll
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\Sample.Application.pdb
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Application\obj\Debug\net7.0\ref\Sample.Application.dll

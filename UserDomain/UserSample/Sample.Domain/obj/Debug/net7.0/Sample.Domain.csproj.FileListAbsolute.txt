@@ -1,0 +1,12 @@
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\bin\Debug\net7.0\Sample.Domain.deps.json
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\bin\Debug\net7.0\Sample.Domain.dll
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\bin\Debug\net7.0\Sample.Domain.pdb
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\Sample.Domain.csproj.AssemblyReference.cache
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\Sample.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\Sample.Domain.AssemblyInfoInputs.cache
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\Sample.Domain.AssemblyInfo.cs
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\Sample.Domain.csproj.CoreCompileInputs.cache
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\Sample.Domain.dll
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\refint\Sample.Domain.dll
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\Sample.Domain.pdb
+C:\Manik\epm.git\allprojects\DddCqrs\UserDomain\UserSample\Sample.Domain\obj\Debug\net7.0\ref\Sample.Domain.dll
