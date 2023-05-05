@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Sample.Domain.Users;
 using Sample.Infrastructure.Users;
 using Sample.Application.Users.GetDetails;
+using System.Reflection;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 namespace Sample.Api
 {
@@ -15,7 +18,8 @@ namespace Sample.Api
 
             //services.AddMediatR(configuration => configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
             services.AddMediatR(configuration => configuration.RegisterServicesFromAssembly(typeof(GetUserDetailsQuery).Assembly));
-
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddFluentValidationAutoValidation();//.AddFluentValidationClientsideAdapters();
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(UnhandledExceptionBehaviour<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehaviour<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));

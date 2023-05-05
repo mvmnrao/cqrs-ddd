@@ -2,8 +2,8 @@
 {
     public interface IUsersRepository
     {
-        Task AddAsync(User user);
+        Task<string> AddAsync(User user);
 
-        Task<User> GetByIdAsync(Guid userId);
+        Task<User> GetByUsernameAsync(string username);
     }
 }

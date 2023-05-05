@@ -3,7 +3,7 @@ using Sample.Domain.Users;
 
 namespace Sample.Application.Users.GetDetails
 {
-    internal sealed class GetUserDetailsQueryHandler : IRequestHandler<GetUserDetailsQuery, UserDetailsDto>
+    internal sealed class GetUserDetailsQueryHandler : IRequestHandler<GetUserDetailsQuery, UserDetailsModel>
     {
         private readonly IUsersRepository usersRepository;
 
@@ -12,10 +12,10 @@ namespace Sample.Application.Users.GetDetails
             this.usersRepository = usersRepository ?? throw new ArgumentNullException($"{nameof(usersRepository)} can not be null.");
         }
 
-        public async Task<UserDetailsDto> Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)
+        public async Task<UserDetailsModel> Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)
         {
-            var user = await usersRepository.GetByIdAsync(request.UserId);
-            return new UserDetailsDto
+            var user = await usersRepository.GetByUsernameAsync(request.Username);
+            return new UserDetailsModel
             {
                 Id = user.ID,
                 Email = user.Email

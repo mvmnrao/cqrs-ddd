@@ -1,8 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Sample.Api.Controllers.Users.Requests;
 using Sample.Application.Users.Register;
 
-namespace Sample.Api.Controllers
+namespace Sample.Api.Controllers.Users
 {
     [Route("api/users")]
     [ApiController]
@@ -17,10 +18,10 @@ namespace Sample.Api.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> RegisterUser(RegisterUserCommand registerUserCommand, CancellationToken cancellationToken)
+        public async Task<IActionResult> RegisterUser(RegisterUserRequest registerUserRequest, CancellationToken cancellationToken)
         {
-            await mediator.Send(registerUserCommand, cancellationToken);
-            return Ok();
+            var command = new RegisterUserCommand(registerUserRequest.Username, registerUserRequest.Email);
+            return Ok(await mediator.Send(command, cancellationToken));
         }
     }
 }

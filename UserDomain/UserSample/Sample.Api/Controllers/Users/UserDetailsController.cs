@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Sample.Application.Users.GetDetails;
 
-namespace Sample.Api.Controllers
+namespace Sample.Api.Controllers.Users
 {
     [Route("api/users")]
     [ApiController]
@@ -16,9 +16,11 @@ namespace Sample.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetUserByIdAsync([FromQuery] GetUserDetailsQuery userDetailsQuery, CancellationToken cancellationToken)
+        public async Task<IActionResult> GetUserByIdAsync([FromQuery] string username, CancellationToken cancellationToken)
         {
-            return Ok(await sender.Send(userDetailsQuery, cancellationToken));
+            var query = new GetUserDetailsQuery(username);
+
+            return Ok(await sender.Send(query, cancellationToken));
         }
     }
 }

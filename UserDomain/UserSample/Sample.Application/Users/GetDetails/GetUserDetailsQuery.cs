@@ -2,8 +2,13 @@
 
 namespace Sample.Application.Users.GetDetails
 {
-    public class GetUserDetailsQuery : IRequest<UserDetailsDto>
+    public class GetUserDetailsQuery : IRequest<UserDetailsModel>
     {
-        public Guid UserId { get; set; }
+        public string Username { get; set; }
+
+        public GetUserDetailsQuery(string username)
+        {
+            Username = username;
+        }
     }
 }
