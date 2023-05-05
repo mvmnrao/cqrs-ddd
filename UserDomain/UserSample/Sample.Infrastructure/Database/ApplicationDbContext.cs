@@ -4,9 +4,9 @@ using System.Reflection;
 
 namespace Sample.Infrastructure.Database
 {
-    public class UserDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
-        public UserDbContext(DbContextOptions<UserDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
 

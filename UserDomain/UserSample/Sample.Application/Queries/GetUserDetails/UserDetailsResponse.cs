@@ -1,6 +1,6 @@
-﻿namespace Sample.Application.Users.GetDetails
+﻿namespace Sample.Application.Queries.GetUserDetails
 {
-    public class UserDetailsModel
+    public class UserDetailsResponse
     {
         public Guid Id { get; set; }
 

@@ -1,4 +1,6 @@
-﻿namespace Sample.Domain.Users
+﻿using Sample.Domain.Users;
+
+namespace Sample.Infrastructure.Repositories.Interfaces
 {
     public interface IUsersRepository
     {

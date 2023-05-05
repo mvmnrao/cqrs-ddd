@@ -1,8 +1,8 @@
 ﻿using MediatR;
 
-namespace Sample.Application.Users.GetDetails
+namespace Sample.Application.Queries.GetUserDetails
 {
-    public class GetUserDetailsQuery : IRequest<UserDetailsModel>
+    public class GetUserDetailsQuery : IRequest<UserDetailsResponse>
     {
         public string Username { get; set; }
 

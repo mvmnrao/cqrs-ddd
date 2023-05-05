@@ -1,7 +1,8 @@
 ﻿using MediatR;
 using Sample.Domain.Users;
+using Sample.Infrastructure.Repositories.Interfaces;
 
-namespace Sample.Application.Users.Register
+namespace Sample.Application.Commands.RegisterUser
 {
     internal sealed class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, string>
     {

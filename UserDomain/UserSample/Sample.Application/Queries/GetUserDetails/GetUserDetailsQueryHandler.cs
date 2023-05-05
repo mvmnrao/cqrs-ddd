@@ -1,9 +1,10 @@
 ﻿using MediatR;
 using Sample.Domain.Users;
+using Sample.Infrastructure.Repositories.Interfaces;
 
-namespace Sample.Application.Users.GetDetails
+namespace Sample.Application.Queries.GetUserDetails
 {
-    internal sealed class GetUserDetailsQueryHandler : IRequestHandler<GetUserDetailsQuery, UserDetailsModel>
+    internal sealed class GetUserDetailsQueryHandler : IRequestHandler<GetUserDetailsQuery, UserDetailsResponse>
     {
         private readonly IUsersRepository usersRepository;
 
@@ -12,10 +13,10 @@ namespace Sample.Application.Users.GetDetails
             this.usersRepository = usersRepository ?? throw new ArgumentNullException($"{nameof(usersRepository)} can not be null.");
         }
 
-        public async Task<UserDetailsModel> Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)
+        public async Task<UserDetailsResponse> Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)
         {
             var user = await usersRepository.GetByUsernameAsync(request.Username);
-            return new UserDetailsModel
+            return new UserDetailsResponse
             {
                 Id = user.ID,
                 Email = user.Email

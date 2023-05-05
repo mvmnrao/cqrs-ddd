@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Sample.Application.Users.Register
+namespace Sample.Application.Commands.RegisterUser
 {
     public class RegisterUserCommand : IRequest<string>
     {

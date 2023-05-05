@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Sample.Application.Users.GetDetails;
+using Sample.Application.Queries.GetUserDetails;
 
-namespace Sample.Api.Controllers.Users
+namespace Sample.Api.Controllers
 {
     [Route("api/users")]
     [ApiController]
@@ -16,7 +16,7 @@ namespace Sample.Api.Controllers.Users
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetUserByIdAsync([FromQuery] string username, CancellationToken cancellationToken)
+        public async Task<IActionResult> GetUserByUsernameAsync([FromQuery] string username, CancellationToken cancellationToken)
         {
             var query = new GetUserDetailsQuery(username);
 

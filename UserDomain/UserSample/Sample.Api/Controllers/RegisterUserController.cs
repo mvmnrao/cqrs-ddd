@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Sample.Api.Controllers.Users.Requests;
-using Sample.Application.Users.Register;
+using Sample.Api.Requests;
+using Sample.Application.Commands.RegisterUser;
 
-namespace Sample.Api.Controllers.Users
+namespace Sample.Api.Controllers
 {
     [Route("api/users")]
     [ApiController]

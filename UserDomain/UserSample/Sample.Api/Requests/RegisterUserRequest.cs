@@ -1,4 +1,4 @@
-﻿namespace Sample.Api.Controllers.Users.Requests
+﻿namespace Sample.Api.Requests
 {
     public class RegisterUserRequest
     {
